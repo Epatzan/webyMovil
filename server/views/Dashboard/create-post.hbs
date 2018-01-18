@@ -1,0 +1,101 @@
+
+<div>
+	<label>Employment Record - Employment Detaills</label>
+	<label>To be completed and retained for each employee</label>
+</div>
+<form  method="POST"  class="js-sendPost">
+
+	<div class="form-group">
+		<label>Employer details </label><br/><br/>
+		<label for ="titleReg">Registered</label>
+		<input type="text" class="form-control" name="registered" placeholder="Registed" value="" required>
+		<label for ="titleTra">Trading name </label>
+		<input type="text" class="form-control" name="Trading" placeholder="Trading name" value="" required>
+		<label for ="titleABN">ABN</label>
+		<input type="text" class="form-control" name="abn" placeholder="ABN" value="" required><br/><br/>
+
+		<label>Employee details </label><br/><br/>
+		<label for ="titlePost">Full name </label>
+		<input type="text" class="form-control" name="nombre" placeholder="Name" value="" required>
+	</div>
+	<div class="form-group">
+		<label for ="contentPos">Date of  Birth</label>
+		<div class='input-group date' id='datetimepicker1'>
+				<input type='text' class="form-control" name="descripcion" placeholder="Date Birth" required />
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+
+	</div>
+	<div class="form-group">
+		<label for ="extractPost">Phone Number</label>
+		<input type="text" class="form-control"  name="cantidadDisponible" placeholder="Phone Number" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Address</label>
+		<input type="text" class="form-control" name="Peso" placeholder="Address" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Tax File</label>
+		<input type="text" class="form-control" name="Caracteristica" placeholder="Tax File" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Employment status</label>
+		<div class="checkbox">
+			<label>
+			 <input type="checkbox"> Ongoing
+			  			<input type="checkbox"> Temporary
+				 				<input type="checkbox"> Full-time
+				  				<input type="checkbox"> Part-time
+					 						<input type="checkbox"> Casual
+					  								<input type="checkbox"> Other( especify eg. plece)
+		 </label>
+		</div>
+		<input type="text" class="form-control" name="Precio" placeholder="Other" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Ordinary hours of works(for part-time or full time employee)</label>
+		<input type="text" class="form-control" name="Tienda" placeholder="Hours" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Agreed/require method of pay(eg)</label>
+		<input type="text" class="form-control" name="Vendedor" placeholder="Method of pay" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Agreed/ require pay period (e.g)</label>
+		<input type="text" class="form-control" name="Puntaje" placeholder="Pay Period" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Agreed/require pay day </label>
+		<input type="text" class="form-control" name="condicionProducto" placeholder="Pay day" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Apprenticeship/ Traineeship</label>
+		<input type="text" class="form-control" name="Ubicacion" placeholder="Traineeship" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Name of Award of Agreement that</label>
+		<input type="text" class="form-control" name="Bodega" placeholder="Award" required>
+	</div>
+	<div class="form-group">
+		<label for ="authorPost">Classification/ job title under the</label>
+		<input type="text" class="form-control" name="tiempoEntrega" placeholder="Job Title" required>
+	</div>
+	<input  type="hidden" value="" class="js-imagen" name="image" >
+	<button type="submit" class="btn btn-default js-saveNews">Save</button>
+
+</form>
+
+
+
+
+
+<div class="alert alert-success ">
+	<strong>¡Completado!</strong> Data Save!!
+</div>
+<div class="alert alert-warning js-warning" style ="display:none">
+	<strong>¡Atencion!</strong> se a producido el siguiente error :
+</div>
+<div class="alert alert-danger" style ="display:none">
+	<strong>¡Error!</strong> La imagen no a sido guardada
+</div>
